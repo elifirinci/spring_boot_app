@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Home Page - <span th:text="${appName}">Our App</span></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to <span th:text="${appName}">Our App</span>!</h1>
+    <p>Your one-stop place to manage your books easily.</p>
+    <a href="/books" class="btn">View Book List</a>
+    <a href="/books/new" class="btn" style="margin-left: 15px; background-color: #2ecc71;">Add New Book</a>
+</header>
+
+<footer>
+    &copy; 2025 <span th:text="${appName}">Our App</span>. All rights reserved.
+</footer>
+</body>
+</html>

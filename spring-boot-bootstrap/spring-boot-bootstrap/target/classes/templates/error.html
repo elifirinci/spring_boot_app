@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Occurred</title>
+</head>
+<body>
+<h1>⚠️ Error Occurred!</h1>
+
+<p><strong>Status:</strong> <span th:text="${status}">Status</span></p>
+<p><strong>Error:</strong> <span th:text="${error}">Error</span></p>
+<p><strong>Message:</strong> <span th:text="${message}">Message</span></p>
+<p><strong>Path:</strong> <span th:text="${path}">Path</span></p>
+
+<hr>
+<p><a href="/">Go back to home page</a></p>
+</body>
+</html>
